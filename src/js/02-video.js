@@ -18,9 +18,9 @@ function onPlay({ seconds, percent }) {
 }
 
 function playFromTheSamePlace() {
-  const isSavedTime = localStorage.getItem(SAVED_TIME_KEY);
+  const savedTime = localStorage.getItem(SAVED_TIME_KEY);
 
-  if (isSavedTime) {
-    player.setCurrentTime(localStorage.getItem(SAVED_TIME_KEY));
+  if (savedTime) {
+    player.setCurrentTime(savedTime);
   }
 }
